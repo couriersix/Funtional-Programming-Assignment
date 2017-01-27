@@ -10,3 +10,8 @@
          (else L)
    )
 )
+
+;2
+
+(define (sum-up-numbers-simple)
+  (
