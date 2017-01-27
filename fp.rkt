@@ -15,5 +15,6 @@
 
 (define (sum-up-numbers-simple)
   (cond ((null? L)
+         (display 0))
         ((list? L)
          (
