@@ -21,4 +21,8 @@
   )       
 )
 
+;3
+
+(define (sum-up-numbers-general)
+  (
          
