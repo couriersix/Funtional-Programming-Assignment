@@ -14,4 +14,6 @@
 ;2
 
 (define (sum-up-numbers-simple)
-  (
+  (cond ((null? L)
+        ((list? L)
+         (
