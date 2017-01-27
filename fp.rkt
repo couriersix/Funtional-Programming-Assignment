@@ -4,4 +4,9 @@
   (cond ((null? L) '())
         ((list? L)
          (append (reverse-general (car L))
-                 
+                 (list (reserve-general (cdr L)))
+          )
+         )
+         (else L)
+   )
+)
