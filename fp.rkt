@@ -25,7 +25,7 @@
 
 (define (sum-up-numbers-general L)
   (cond ((null? L) 0)
-        ((list? (car L)) (+ (car L) (sum-up-numbers-general (cdr L))))
+        ((list? L) (+ (car L) (sum-up-numbers-general (cdr L))))
         ((number? (car L)) (+ (car L) (sum-up-numbers-general (cdr L))))
         (else (sum-up-numbers-general(cdr L)))
    )
