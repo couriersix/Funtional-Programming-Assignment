@@ -23,9 +23,9 @@
 
 ;3
 
-(define (sum-up-numbers-general L)
+(define (sum-up-numbers-general L) ;code is identical to question 2 except for the third line
   (cond ((null? L) 0)
-        ((list? L) (car L) (+ (sum-up-numbers-general (cdr L)) (sum-up-numbers-general (car L))))
+        ((list? (car L)) (+ (sum-up-numbers-general (cdr L)) (sum-up-numbers-general (car L)))) ;instead of ignoring lists, the code now concatenates them, like in the next line, and recurses 
         ((number? (car L)) (+ (car L) (sum-up-numbers-general (cdr L))))
         (else (sum-up-numbers-general(cdr L)))
    )
