@@ -13,9 +13,13 @@
 
 ;2
 
-(define (sum-up-numbers-simple)
-  (cond ((null? L)
-         (display 0))
-        ((number? (car L)
-          (+car L) 
+(define (sum-up-numbers-simple L)
+  (cond ((null? (display 0))
+         (list? (car L))
+         (number? +(car L))
+         (else L)
+         )
+ )
+)
+
          
