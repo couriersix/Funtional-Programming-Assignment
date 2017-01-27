@@ -13,11 +13,11 @@
 
 ;2
 
-(define (sum-up-numbers-simple L)
-  (cond ((null? L) 0)
-         ((list? (car L)) (sum-up-numbers-simple (cdr L)))
-         ((number? (car L)) (+ (car L) (sum-up-numbers-simple (cdr L))))
-         (else (sum-up-numbers-simple(cdr L)))
+(define (sum-up-numbers-simple L) ;establishes the function 'sum-up-numbers-simple'
+  (cond ((null? L) 0) ;this begins the conditions.  if there is nothing, 0 is returned
+         ((list? (car L)) (sum-up-numbers-simple (cdr L))) ;if the number or character is a list, it is removed, and the recursion begins
+         ((number? (car L)) (+ (car L) (sum-up-numbers-simple (cdr L)))) ;if the element is a number, it is held and concatenated to the other numbers (that are not a list)
+         (else (sum-up-numbers-simple(cdr L))) ;covers and characters, envokes the recursion
   )       
 )
 
