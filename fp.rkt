@@ -15,11 +15,9 @@
 
 (define (sum-up-numbers-simple L)
   (cond ((null? (display 0))
-         (list? (car L) (sum-up-numbers-simple (cdr L)))
-         (number? (+(car L) (sum-up-numbers-simple (cdr L)))
-  )  
-         ;(else (sum-up-numbers-simple (cdr L)))
-         
+         (list? (car L)) (sum-up-numbers-simple (cdr L))
+         (number? (car L)) (+(car L) (sum-up-numbers-simple (cdr L)))
+         ;(else (sum-up-numbers-simple(cdr L)))
   )       
 )
 )
